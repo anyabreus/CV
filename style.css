@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(26, 66, 50);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    position: fixed;
+    height: 100vh;
+    background-color: rgb(60, 168, 127);
+    border-right: 10px solid rgb(26, 66, 50);
+}
+
+.profile-image {
+    max-width: 250px;
+    border: 10px solid rgb(238, 190, 181);
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.profile-image:hover {
+    border: 10px solid white;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar ul li {
+    padding-bottom: 25px;
+}
+
+.navbar ul li a {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(236, 220, 217);
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: white;
+}
+
+.container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px 100px 0 400px;
+    min-height: 100vh;
+    margin-left: auto;
+    border-bottom: 1px solid lightgray;
+}
+
+.container section .section-content h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.container section .section-content h1 span,
+.container section .section-content p a {
+    color: rgb(60, 168, 127);
+    text-decoration: none;
+}
+
+.container section .section-content p a:first-child {
+    color: rgb(26, 66, 50);
+}
+
+.container section .section-content p {
+    padding-bottom: 50px;
+}
+
+.social-icons {
+    padding-top: 50px;
+}
+
+.social-icons svg {
+    width: 50px;
+    fill: rgb(26, 66, 50);
+}
+
+.social-icons a {
+    float: left;
+    margin-right: 10px;
+}
+
+.container section .section-content h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.container section .section-content .exp-block,
+.container section .section-content .ed-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container section .section-content .exp-description h3,
+.container section .section-content .ed-description h3{
+    text-transform: uppercase;
+}
+
+.container section .section-content .exp-block .exp-period,
+.container section .section-content .ed-block .ed-period {
+    text-align: right;
+    color: rgb(60, 168, 127);
+}
+
+.container #skills .section-content p:first-of-type {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.container #skills .section-content p:last-of-type,
+.container #interests .section-content p:last-of-type {
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: block;
+        min-width: 100%;
+        height: auto;
+        border-bottom: 5px solid rgb(26, 66, 50);
+        border-right: none;
+    }
+
+    nav a .profile-image {
+        display: none;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .navbar ul li {
+        padding: 0 5px 3px;
+        border-right: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+    }
+    
+    .navbar ul li a {
+        font-size: 10px;
+    }
+
+    .container section {
+        padding: 90px 15px 0;
+    }
+
+    .container section .section-content h1 {
+        font-size: 30px;
+    }
+
+    .social-icons svg {
+        width: 40px;
+    }
+
+    .container section .section-content h2 {
+        font-size: 20px;
+    }
+    
+    .container section .section-content .exp-block,
+    .container section .section-content .ed-block {
+        padding-right: 0px;
+    }
+
+    .container section .section-content .exp-description,
+    .container section .section-content .ed-description {
+        width: 70%;
+    }
+
+    .container section .section-content .exp-description h3,
+    .container section .section-content .ed-description h3 {
+        font-size: 15px;
+    }
+
+    .container section .section-content .exp-description,
+    .container section .section-content .ed-description,
+    .container section .section-content .exp-period,
+    .container section .section-content .ed-period {
+        font-size: 12px;
+    }
+
+    .container #skills .section-content p:last-of-type,
+    .container #interests .section-content p:last-of-type {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav a .profile-image {
+        max-width: 250px;
+        border: 7px solid rgb(238, 190, 181);
+    }
+
+    .container section {
+        padding-left: 350px;
+        padding-right: 60px;
+    }
+
+    .container section .section-content h1 {
+        font-size: 50px;
+    }
+
+    .social-icons svg {
+        width: 40px;
+    }
+
+    .container section .section-content h2 {
+        font-size: 30px;
+    }
+    
+    .container section .section-content .exp-description,
+    .container section .section-content .ed-description {
+        width: 70%;
+    }
+
+    .container section .section-content .exp-description,
+    .container section .section-content .ed-description,
+    .container section .section-content .exp-period,
+    .container section .section-content .ed-period {
+        font-size: 12px;
+    }
+
+    .container #skills .section-content p:last-of-type,
+    .container #interests .section-content p:last-of-type {
+        padding-right: 0px;
+    }
+}
